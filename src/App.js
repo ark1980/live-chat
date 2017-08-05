@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Message from './Message'
+import Message from './Component/Message'
 import messages from './seed_data';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {messages.map((item, i) => 
-          <Message key={i} data={item} />
-        )}
+        <Message data={messages} />
       </div>
     );
   }
